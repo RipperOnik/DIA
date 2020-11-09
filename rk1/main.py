@@ -44,7 +44,8 @@ def main():
     many_to_many = [(c.model, os_name)
                     for os_name, os_id, com_id in many_to_many_temp
                     for c in comps if c.id == com_id]
-
+    print(one_to_many)
+    print(many_to_many)
     print("Задание 1")
     temp = [(pc[2], pc[0]) for pc in one_to_many if pc[2][0] == "W"]
     temp_os = [pc[0] for pc in temp]
