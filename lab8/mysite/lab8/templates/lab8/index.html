@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+  </head>
+  <body>
+    <h1>Животные.</h1>
+    {% if animal_list %}
+        <ul>
+        {% for animal in animal_list %}
+            <li><a href="/lab8/{{ animal.id }}/">{{ animal.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No animals are available.</p>
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal</title>
+</head>
+<body>
+    <h1>{{animal.name}}</h1>
+    {% if animal.name == 'penguin' %}
+        <img src="https://anband.spb.ru/images/000/DSC100040258.jpg" width="400px" height="300px">
+    {% elif animal.name == 'tiger' %}
+        <img src="https://wallpaperscave.ru/images/original/18/07-16/animals-tiger-67563.jpg" width="400px" height="300px">
+    {% elif animal.name == 'wolf' %}
+        <img src="https://assets.joelsartore.com/stock/WOL002/WOL002-00021.jpg" width="400px" height="300px">
+    {% endif %}
+    <h2>Описание.</h2>
+    <p>{{animal.description}}</p>
+    <a href="/lab8/">Назад</a>
+</body>
+</html>
